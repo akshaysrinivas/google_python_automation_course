@@ -1,0 +1,5 @@
+mv /mnt/c/Users/SriNi/Downloads/qwikLABS-L2398-19969507.pem ~/
+
+chmod 600 qwikLABS-L2398-19969507.pem
+
+ssh -i qwikLABS-L2398-19969507.pem student-00-183cab1f2dc2@35.239.125.224

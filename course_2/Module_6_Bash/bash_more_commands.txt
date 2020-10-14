@@ -1,0 +1,31 @@
+tail /var/log/alternatives.log
+
+ tail /var/log/alternatives.log | cut -d' ' -f4-
+
+ -d' ' - d is delimiter addressing the space 
+ -f4- - represents the field number 4 to up
+ grep " jane " ../data/list.txt | cut -d ' ' -f 1 <--- To select only that field
+ grep " jane " ../data/list.txt | cut -d ' ' -f 1,3 <---- To selct field 1 and 3 only
+
+ cut - means cut the line with the conditions
+
+ cut -d' ' -f3- /var/log/alternatives.log | sort | uniq -c | sort -nr | head
+
+ sort in numerical order
+ sort -nr sort in numerical reverse order
+
+ head - top 10 lines
+
+ uniq - repeating lines 
+ -c - count of repeating values
+
+ chmod 600 qwikLABS-L2377-19922018.pem
+
+ ssh -i qwikLABS-L2377-19922018.pem student-01-a9ff97fe3291@34.72.127.99
+
+ grep [pattern] [file-directory]
+ The grep command, which stands for "global regular expression print", processes text line-by-line and prints any lines that match a specified pattern.
+
+ cut
+ The cut command extracts a given number of characters or columns from a file. A delimiter is a character or set of characters that separate text strings.
+ cut [options] [file]

@@ -1,0 +1,36 @@
+import re
+line = "May 27 11:45:40 ubuntu.local ticky: INFO: Created ticket [#1234] (username)"
+re.search(r"ticky: INFO: ([\w ]*) ", line)
+
+line = "May 27 11:45:40 ubuntu.local ticky: ERROR: Error creating ticket [#1234] (username)"
+re.search(r"ticky: ERROR: ([\w ]*) ", line)
+
+Now that you know how to use regular expressions with Python, start fetching logs of ticky for a specific username. We'll need them in later sections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
+sorted(fruit.items())
+import operator
+sorted(fruit.items(), key=operator.itemgetter(0))
+sorted(fruit.items(), key=operator.itemgetter(1))
+sorted(fruit.items(), key = operator.itemgetter(1), reverse=True)
+
+Great job practice these skills! You can further practice this by sorting the logs that you would fetch using regular expressions from the previous section.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+35.239.105.29/user_emails.html
+
+Traceback (most recent call last):
+  File "./ticky_check.py", line 17, in <module>
+    if log_error[1] == 'R':
+TypeError: '_sre.SRE_Match' object is not subscriptable
+
+if not {parsed_host[0]}.issubset(parsed_saved_host.group(1).split(',')):
+attempts to access item 0 of parsed_host, a Match object.
+
+Since the Match.__getitem__() method is implemented since Python 3.6 according to the documentation, your code should work in Python 3.6, and if you are getting a '_sre.SRE_Match' object is not subscriptable error, it means that you are not actually using Python 3.6, but an earlier version.
+
+Change the line to:
+
+if not {parsed_host.group(0)}.issubset(parsed_saved_host.group(1).split(',')):
+and the code would work for earlier versions of Python.

@@ -1,0 +1,7 @@
+-rw-rw-rw- 1 root root   0 Oct 11 09:10 janez_profile_11042019.doc
+-rw-rw-rw- 1 root root   0 Oct 11 09:10 jdoe_contact_07292018.csv
+-rw-rw-rw- 1 root root   0 Oct 11 09:10 jdoe_profile_07272018.doc
+-rw-rw-rw- 1 root root   0 Oct 11 09:10 kwood_pic_04032017.jpg
+-rw-rw-rw- 1 root root   0 Oct 11 09:10 kwood_profile_04022017.doc
+-rw-rw-rw- 1 root root 412 Oct 11 09:10 list.txt
+-rw-rw-rw- 1 root root   0 Oct 11 09:10 pchow_pic_05162019.jpg

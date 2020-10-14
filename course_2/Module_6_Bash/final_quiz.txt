@@ -1,0 +1,7 @@
+if test -e ~/data/jane_profile_07272018.doc; then echo "File exists"; else echo "File doesn't exist"; fi
+
+echo "I am appending text to this test file" >> test.txt
+
+For: A for loop repeats the execution of a group of statements over a set of items.
+While: A while loop executes a set of instructions as long as the control condition remains true.
+Until: An until loop executes a set of instructions as long as the control condition remains false.

@@ -1,0 +1,13 @@
+askjfhasjfhsajfhsdjklhjfksbadgasgdfljsadbfasd
+sdfoisdahfisdfhi doifhiosdh ioajsdhoisdjhf ioshjddfoisj ioshjddfoisjsadf
+sadufh dsoifjasiojfsdf8456465  sdfsadf6s4 6as8fd 4sd654f 6asdf s54adf4 
+sd fsdaf5sd4 54sd5 sda8f 4sd56f4 s8d64fsd5646s54s6g4r6ge4t68he4te4f6a4f
+rouiqhdqeurqweoiuqweoprudsfahsdkjf kj
+You've already taken the first step, now continue your journey with the most trusted platform for ed
+
+chmod 600 qwikLABS-L2387-19858342.pem
+
+ssh -i qwikLABS-L2387-19858342.pem student-03-d65e152d586d@34.121.146.14
+
+
+
