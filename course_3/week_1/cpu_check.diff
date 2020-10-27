@@ -1,0 +1,10 @@
+--- cpu_check_new.py	2020-10-13 09:21:08.090000000 +0530
++++ cpu_check.py	2020-10-13 09:15:01.880000000 +0530
+@@ -5,6 +5,7 @@
+ 
+ def cpu_overload_check(latency, percentage):
+     usage = psutil.cpu_percent(float(latency))
++    print("Latency : {} \nPercentage : {} \nUsage : {}\n".format(float(latency), float(percentage), usage))
+     return usage > float(percentage)
+ 
+ if cpu_overload_check(sys.argv[1], sys.argv[2]):
