@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 
 def binarySearch (arr, l, r, x): 
-  
+    print("\nEntered the function binary_search() with list {}, Left: {} Right: {}".format(arr, l, r))
     # Check base case 
     if r >= l: 
   
         mid = l + (r - l) // 2
-  
+        print("\nMiddle position set {}: Element {}".format(mid, arr[mid]))
         # If element is present at the middle itself 
         if arr[mid] == x: 
+            print("\nFound key {} in postion {}".format(x, mid))
             return mid 
           
         # If element is smaller than mid, then it  
@@ -27,7 +28,7 @@ def binarySearch (arr, l, r, x):
   
 # Driver Code 
 arr = [ 2, 3, 4, 10, 40 ] 
-x = 10
+x = 2
   
 # Function call 
 result = binarySearch(arr, 0, len(arr)-1, x) 
